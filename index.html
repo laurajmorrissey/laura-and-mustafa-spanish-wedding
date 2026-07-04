@@ -9,130 +9,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-
-background:
-linear-gradient(rgba(255,248,240,.85),rgba(255,248,240,.85)),
-url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1800&q=80");
-
-background-size:cover;
-background-attachment:fixed;
-
-font-family:Montserrat,sans-serif;
-color:#3f342e;
-line-height:1.8;
-
+background:linear-gradient(rgba(255,248,240,.85),rgba(255,248,240,.85)),url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;background-attachment:fixed;font-family:Montserrat,sans-serif;color:#3f342e;line-height:1.8;
 }
-
-.container{
-max-width:900px;
-margin:auto;
-padding:70px 25px;
-}
-
-.hero{
-text-align:center;
-padding:120px 20px;
-}
-
-.hero h1{
-font-family:"Cormorant Garamond",serif;
-font-size:72px;
-font-weight:600;
-margin-bottom:15px;
-}
-
-.hero h2{
-font-size:22px;
-font-weight:300;
-letter-spacing:5px;
-text-transform:uppercase;
-margin-bottom:40px;
-}
-
-.button{
-display:inline-block;
-padding:18px 42px;
-background:#7a3b2e;
-color:white;
-text-decoration:none;
-border-radius:50px;
-font-weight:600;
-transition:.3s;
-}
-
-.button:hover{
-background:#5f2d23;
-}
-
-.card{
-background:white;
-padding:45px;
-border-radius:18px;
-margin-top:40px;
-box-shadow:0 10px 40px rgba(0,0,0,.08);
-}
-
-h3{
-font-family:"Cormorant Garamond",serif;
-font-size:42px;
-margin-bottom:20px;
-text-align:center;
-}
-
-.section{
-margin-bottom:55px;
-}
-
-.section p{
-text-align:center;
-}
-
-.details{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-margin-top:30px;
-}
-
-.info{
-background:#faf7f4;
-padding:25px;
-border-radius:12px;
-text-align:center;
-}
-
-.info h4{
-margin-bottom:10px;
-font-size:18px;
-}
-
-footer{
-padding:80px 20px;
-text-align:center;
-font-size:14px;
-opacity:.8;
-}
-
-@media(max-width:700px){
-
-.hero h1{
-font-size:48px;
-}
-
-.details{
-grid-template-columns:1fr;
-}
-
-}
-
+.container{max-width:900px;margin:auto;padding:70px 25px}
+.hero{text-align:center;padding:120px 20px}
+.hero h1{font-family:"Cormorant Garamond",serif;font-size:72px;font-weight:600;margin-bottom:15px}
+.hero h2{font-size:22px;font-weight:300;letter-spacing:5px;text-transform:uppercase;margin-bottom:40px}
+.button{display:inline-block;padding:18px 42px;background:#7a3b2e;color:white;text-decoration:none;border-radius:50px;font-weight:600;transition:.3s}
+.button:hover{background:#5f2d23}
+.card{background:white;padding:45px;border-radius:18px;margin-top:40px;box-shadow:0 10px 40px rgba(0,0,0,.08)}
+h3{font-family:"Cormorant Garamond",serif;font-size:42px;margin-bottom:20px;text-align:center}
+.section{margin-bottom:55px}
+.section p{text-align:center}
+.details{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:30px}
+.info{background:#faf7f4;padding:25px;border-radius:12px;text-align:center}
+.info h4{margin-bottom:10px;font-size:18px}
+footer{padding:80px 20px;text-align:center;font-size:14px;opacity:.8}
+/* form styles */
+.form{max-width:640px;margin:30px auto 0}
+.form label{display:block;margin-bottom:8px;font-weight:600}
+.input, .select, .textarea{width:100%;padding:12px 14px;border-radius:8px;border:1px solid #e6e0dc;margin-bottom:16px;font-size:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.full{grid-column:1/-1}
+.submit{display:inline-block;padding:12px 26px;background:#7a3b2e;color:#fff;border-radius:50px;border:none;font-weight:600;cursor:pointer}
+.thanks{display:none;text-align:center;padding:20px;background:#f6fff6;border-radius:12px;border:1px solid #e6f7ea;margin-top:16px}
+.error{color:#b33;margin-top:8px;text-align:center}
+@media(max-width:700px){.hero h1{font-size:48px}.details{grid-template-columns:1fr}.row{grid-template-columns:1fr}}
 </style>
 
 </head>
@@ -147,13 +52,9 @@ grid-template-columns:1fr;
 
 <h1>Laura & Mustafa</h1>
 
-<p style="font-size:22px;margin-bottom:45px;">
-We can't wait to celebrate our special day with you in beautiful Spain.
-</p>
+<p style="font-size:22px;margin-bottom:45px;">We can't wait to celebrate our special day with you in beautiful Spain.</p>
 
-<a class="button" href="mailto:lauraj.morrissey@gmail.com?subject=Wedding RSVP">
-RSVP
-</a>
+<a class="button" href="#rsvp">RSVP</a>
 
 </section>
 
@@ -163,15 +64,11 @@ RSVP
 
 <h3>Welcome</h3>
 
-<p>
-
-Your presence is the greatest gift we could ask for.
+<p>Your presence is the greatest gift we could ask for.
 
 Join us as we celebrate our wedding surrounded by family, friends, sunshine, amazing food and a weekend we will never forget.
 
-We are so excited to share this special day with the people we love most.
-
-</p>
+We are so excited to share this special day with the people we love most.</p>
 
 </div>
 
@@ -183,50 +80,22 @@ We are so excited to share this special day with the people we love most.
 
 <div class="info">
 <h4>📍 Ceremony</h4>
-
-<p>
-Moraira Castle<br><br>
-
-3:00 PM
-</p>
+<p>Moraira Castle<br><br>3:00 PM</p>
 </div>
 
 <div class="info">
-
 <h4>🥂 Reception</h4>
-
-<p>
-
-Teulada<br><br>
-
-At Laura's Dad's Home
-
-</p>
-
+<p>Teulada<br><br>At Laura's Dad's Home</p>
 </div>
 
 <div class="info">
-
 <h4>🚌 Transport</h4>
-
-<p>
-
-Transport will be provided from the ceremony to the reception.
-
-</p>
-
+<p>Transport will be provided from the ceremony to the reception.</p>
 </div>
 
 <div class="info">
-
 <h4>👔 Dress Code</h4>
-
-<p>
-
-Smart Attire
-
-</p>
-
+<p>Smart Attire</p>
 </div>
 
 </div>
@@ -237,34 +106,71 @@ Smart Attire
 
 <h3>Accommodation</h3>
 
-<p>
+<p>We recommend staying in either Moraira or Teulada, both are close to the venue and offer beautiful hotels, apartments and villas.
 
-We recommend staying in either Moraira or Teulada, both are close to the venue and offer beautiful hotels, apartments and villas.
-
-More recommendations will be added closer to the wedding.
-
-</p>
+More recommendations will be added closer to the wedding.</p>
 
 </div>
 
-<div class="section">
+<div class="section" id="rsvp">
 
 <h3>RSVP</h3>
 
-<p>
+<p>Please let us know if you can celebrate with us by responding before our RSVP deadline.</p>
 
-Please let us know if you can celebrate with us by responding before our RSVP deadline.
+<form class="form" id="rsvp-form" action="https://formsubmit.co/lauraj.morrissey@gmail.com" method="POST">
+  <!-- Hidden inputs for Formsubmit -->
+  <input type="hidden" name="_subject" value="Wedding RSVP from website">
+  <input type="hidden" name="_captcha" value="false">
 
-</p>
+  <div class="row">
+    <div>
+      <label for="name">Full name</label>
+      <input class="input" id="name" name="name" type="text" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input class="input" id="email" name="email" type="email" required>
+    </div>
+  </div>
 
-<br>
+  <div class="row">
+    <div>
+      <label>Will you attend?</label>
+      <div style="display:flex;gap:12px;align-items:center">
+        <label><input type="radio" name="attending" value="Yes" required> Yes</label>
+        <label><input type="radio" name="attending" value="No"> No</label>
+      </div>
+    </div>
+    <div>
+      <label for="guests">Number of guests</label>
+      <input class="input" id="guests" name="guests" type="number" min="0" value="0">
+    </div>
+  </div>
 
-<p style="text-align:center;">
+  <label for="dietary">Dietary requirements</label>
+  <input class="input" id="dietary" name="dietary" type="text" placeholder="e.g. vegetarian, gluten-free">
 
-<a class="button" href="mailto:lauraj.morrissey@gmail.com?subject=Wedding RSVP">
-Send RSVP
-</a>
+  <label for="message">Message (optional)</label>
+  <textarea class="textarea" id="message" name="message" rows="4" placeholder="Any notes for us..."></textarea>
 
+  <!-- Honeypot field (should be left empty) -->
+  <input type="text" name="_honey" style="display:none">
+
+  <div style="text-align:center;margin-top:8px">
+    <button type="submit" class="submit" id="submit-btn">Send RSVP</button>
+  </div>
+
+  <div class="thanks" id="thanks">
+    <strong>Thank you — your RSVP has been sent!</strong>
+    <p>We will be in touch with more details. If you have any questions, email lauraj.morrissey@gmail.com</p>
+  </div>
+
+  <div class="error" id="form-error" role="alert" aria-live="polite"></div>
+</form>
+
+<p style="text-align:center;margin-top:14px">
+  <a class="button" href="#rsvp">Go to RSVP form</a>
 </p>
 
 </div>
@@ -272,12 +178,69 @@ Send RSVP
 </div>
 
 <footer>
-
 Made with love for our favourite people ❤️
-
 </footer>
 
 </div>
+
+<script>
+(function(){
+  const form = document.getElementById('rsvp-form');
+  const thanks = document.getElementById('thanks');
+  const errorEl = document.getElementById('form-error');
+  const submitBtn = document.getElementById('submit-btn');
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    errorEl.textContent = '';
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    // If honeypot filled, abort
+    if(form.querySelector('[name=_honey]').value){
+      errorEl.textContent = 'Spam detected.';
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send RSVP';
+      return;
+    }
+
+    const action = form.action;
+    const formData = new FormData(form);
+
+    try{
+      // Try fetch POST so we can show inline thank-you
+      const resp = await fetch(action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if(resp.ok){
+        form.style.display = 'none';
+        thanks.style.display = 'block';
+      } else {
+        // fallback: Formsubmit returns 403 if email not verified
+        const data = await resp.text();
+        errorEl.textContent = 'Submission failed. Please try again or email us directly.';
+        console.error('Form submission error', resp.status, data);
+      }
+    } catch(err){
+      // If fetch fails (CORS or network), fallback to normal form submit
+      console.warn('Fetch failed, falling back to form submit', err);
+      try{
+        form.submit();
+      } catch(subErr){
+        errorEl.textContent = 'Submission failed. Please try emailing us at lauraj.morrissey@gmail.com';
+      }
+    } finally{
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send RSVP';
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
