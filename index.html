@@ -12,18 +12,12 @@
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
-  background-color:#faf7f3;
+  background-color:#1a4d7a;
   background-image:
-    repeating-linear-gradient(45deg, 
-      transparent, 
-      transparent 100px, 
-      rgba(198,124,78,.04) 100px, 
-      rgba(198,124,78,.04) 200px),
-    repeating-linear-gradient(-45deg, 
-      transparent, 
-      transparent 100px, 
-      rgba(139,69,19,.03) 100px, 
-      rgba(139,69,19,.03) 200px);
+    url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='blueyellow' x='0' y='0' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Crect x='0' y='0' width='100' height='100' fill='%23ffd700'/%3E%3Crect x='0' y='0' width='100' height='100' fill='none' stroke='%231a4d7a' stroke-width='2'/%3E%3Cpath d='M 20 30 Q 40 15 60 30 T 100 30' stroke='%231a4d7a' stroke-width='3' fill='none'/%3E%3Cpath d='M 20 70 Q 40 55 60 70 T 100 70' stroke='%231a4d7a' stroke-width='3' fill='none'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%231a4d7a'/%3E%3C/pattern%3E%3Cpattern id='blueyellow2' x='100' y='0' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Crect x='100' y='0' width='100' height='100' fill='%231a4d7a'/%3E%3Crect x='100' y='0' width='100' height='100' fill='none' stroke='%23ffd700' stroke-width='2'/%3E%3Cpath d='M 120 30 Q 140 15 160 30 T 200 30' stroke='%23ffd700' stroke-width='3' fill='none'/%3E%3Cpath d='M 120 70 Q 140 55 160 70 T 200 70' stroke='%23ffd700' stroke-width='3' fill='none'/%3E%3Ccircle cx='150' cy='50' r='12' fill='%23ffd700'/%3E%3C/pattern%3E%3Cpattern id='blueyellow3' x='0' y='100' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Crect x='0' y='100' width='100' height='100' fill='%231a4d7a'/%3E%3Crect x='0' y='100' width='100' height='100' fill='none' stroke='%23ffd700' stroke-width='2'/%3E%3Cpath d='M 20 130 Q 40 115 60 130 T 100 130' stroke='%23ffd700' stroke-width='3' fill='none'/%3E%3Cpath d='M 20 170 Q 40 155 60 170 T 100 170' stroke='%23ffd700' stroke-width='3' fill='none'/%3E%3Ccircle cx='50' cy='150' r='12' fill='%23ffd700'/%3E%3C/pattern%3E%3Cpattern id='blueyellow4' x='100' y='100' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Crect x='100' y='100' width='100' height='100' fill='%23ffd700'/%3E%3Crect x='100' y='100' width='100' height='100' fill='none' stroke='%231a4d7a' stroke-width='2'/%3E%3Cpath d='M 120 130 Q 140 115 160 130 T 200 130' stroke='%231a4d7a' stroke-width='3' fill='none'/%3E%3Cpath d='M 120 170 Q 140 155 160 170 T 200 170' stroke='%231a4d7a' stroke-width='3' fill='none'/%3E%3Ccircle cx='150' cy='150' r='12' fill='%231a4d7a'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23blueyellow)'/%3E%3Crect x='100' y='0' width='100' height='100' fill='url(%23blueyellow2)'/%3E%3Crect x='0' y='100' width='100' height='100' fill='url(%23blueyellow3)'/%3E%3Crect x='100' y='100' width='100' height='100' fill='url(%23blueyellow4)'/%3E%3C/svg%3E");
+  background-repeat:repeat;
+  background-size:200px 200px;
+  background-attachment:fixed;
   font-family:'Montserrat',sans-serif;
   color:#2c2416;
   line-height:1.8;
@@ -37,11 +31,10 @@ body::before{
   left:0;
   right:0;
   bottom:0;
-  background-image:
-    url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='tile' x='0' y='0' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Crect x='0' y='0' width='100' height='100' fill='%23f5f1ed' stroke='%23d4a574' stroke-width='1' opacity='0.1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23tile)'/%3E%3C/svg%3E");
+  background:none;
   pointer-events:none;
   z-index:-1;
-  opacity:0.6;
+  opacity:0;
 }
 
 /* Decorative azulejo corner accent */
@@ -50,15 +43,12 @@ body::after{
   position:fixed;
   bottom:0;
   right:0;
-  width:300px;
-  height:300px;
-  background-image:
-    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23c67c4e;stop-opacity:0.15'/%3E%3Cstop offset='100%25' style='stop-color:%234a3728;stop-opacity:0.1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23g1)'/%3E%3Cpath d='M0,0 L100,100' stroke='%23d4a574' stroke-width='0.5' opacity='0.3'/%3E%3Cpath d='M100,0 L0,100' stroke='%23d4a574' stroke-width='0.5' opacity='0.3'/%3E%3C/svg%3E");
-  background-repeat:repeat;
-  background-size:100px 100px;
+  width:0;
+  height:0;
+  background:none;
   pointer-events:none;
   z-index:-1;
-  opacity:0.4;
+  opacity:0;
 }
 
 .container{max-width:950px;margin:auto;padding:60px 30px;position:relative;z-index:1}
@@ -97,11 +87,12 @@ body::after{
   font-size:84px;
   font-weight:700;
   margin-bottom:15px;
-  background:linear-gradient(135deg, #8b4513 0%, #d4a574 50%, #8b4513 100%);
+  background:linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
   letter-spacing:2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.2);
 }
 
 .hero h2{
@@ -110,21 +101,21 @@ body::after{
   letter-spacing:6px;
   text-transform:uppercase;
   margin-bottom:10px;
-  color:#b8860b;
+  color:#ffd700;
 }
 
 .hero p{
   font-size:20px;
   margin-bottom:50px;
-  color:#5a5a4a;
+  color:#f0f0f0;
   font-weight:300;
 }
 
 .button{
   display:inline-block;
   padding:16px 48px;
-  background:linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
-  color:white;
+  background:linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color:#1a4d7a;
   text-decoration:none;
   border-radius:2px;
   font-weight:600;
@@ -132,14 +123,14 @@ body::after{
   text-transform:uppercase;
   letter-spacing:2px;
   font-size:13px;
-  box-shadow:0 4px 15px rgba(139,69,19,.25);
-  border:2px solid #8b4513;
+  box-shadow:0 4px 15px rgba(255,215,0,.4);
+  border:2px solid #ffd700;
 }
 
 .button:hover{
-  background:linear-gradient(135deg, #6b3410 0%, #8b4513 100%);
+  background:linear-gradient(135deg, #ffed4e 0%, #ffd700 100%);
   transform:translateY(-2px);
-  box-shadow:0 8px 20px rgba(139,69,19,.35);
+  box-shadow:0 8px 20px rgba(255,215,0,.6);
 }
 
 /* Premium Card with Tile Border */
@@ -149,12 +140,12 @@ body::after{
   border-radius:0;
   margin-top:40px;
   box-shadow:
-    0 20px 60px rgba(0,0,0,.08),
+    0 20px 60px rgba(0,0,0,.15),
     inset 0 1px 0 rgba(255,255,255,.6);
   border:1px solid #e8e0d8;
   position:relative;
   border-top:6px solid;
-  border-image:linear-gradient(90deg, #d4a574, #c67c4e, #8b4513, #c67c4e, #d4a574) 1;
+  border-image:linear-gradient(90deg, #1a4d7a, #ffd700, #1a4d7a) 1;
 }
 
 .card::before{
@@ -166,10 +157,10 @@ body::after{
   height:8px;
   background-image:
     repeating-linear-gradient(90deg,
-      #d4a574 0px,
-      #d4a574 20px,
-      #c67c4e 20px,
-      #c67c4e 40px);
+      #1a4d7a 0px,
+      #1a4d7a 20px,
+      #ffd700 20px,
+      #ffd700 40px);
   border-radius:0 0 0 0;
 }
 
@@ -178,7 +169,7 @@ h3{
   font-size:48px;
   margin-bottom:30px;
   text-align:center;
-  background:linear-gradient(135deg, #8b4513 0%, #d4a574 50%, #8b4513 100%);
+  background:linear-gradient(135deg, #1a4d7a 0%, #ffd700 50%, #1a4d7a 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -221,7 +212,7 @@ h3{
   left:0;
   right:0;
   height:4px;
-  background:linear-gradient(90deg, #d4a574, #c67c4e);
+  background:linear-gradient(90deg, #1a4d7a, #ffd700);
 }
 
 .info::after{
@@ -231,13 +222,13 @@ h3{
   left:0;
   right:0;
   height:1px;
-  background:linear-gradient(90deg, transparent, #d4a574, transparent);
+  background:linear-gradient(90deg, transparent, #1a4d7a, transparent);
 }
 
 .info h4{
   margin-bottom:16px;
   font-size:18px;
-  color:#8b4513;
+  color:#1a4d7a;
   font-weight:600;
   margin-top:8px;
 }
@@ -255,6 +246,7 @@ footer{
   opacity:.7;
   border-top:1px solid #e8dcd0;
   margin-top:60px;
+  color:#f0f0f0;
 }
 
 /* Form Styles */
@@ -281,7 +273,7 @@ footer{
   width:100%;
   padding:14px 16px;
   border-radius:0;
-  border:1px solid #d4a574;
+  border:1px solid #1a4d7a;
   margin-bottom:20px;
   font-size:15px;
   background:#fff;
@@ -291,9 +283,9 @@ footer{
 
 .input:focus, .select:focus, .textarea:focus{
   outline:none;
-  border-color:#8b4513;
+  border-color:#ffd700;
   background:#fffcf7;
-  box-shadow:0 0 0 3px rgba(212,165,116,.1);
+  box-shadow:0 0 0 3px rgba(255,215,0,.2);
 }
 
 .row{
@@ -307,23 +299,23 @@ footer{
 .submit{
   display:inline-block;
   padding:14px 42px;
-  background:linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+  background:linear-gradient(135deg, #1a4d7a 0%, #2c6ca3 100%);
   color:#fff;
   border-radius:0;
-  border:2px solid #8b4513;
+  border:2px solid #1a4d7a;
   font-weight:600;
   cursor:pointer;
   transition:all .3s;
   text-transform:uppercase;
   letter-spacing:1.5px;
   font-size:12px;
-  box-shadow:0 4px 15px rgba(139,69,19,.25);
+  box-shadow:0 4px 15px rgba(26,77,122,.25);
 }
 
 .submit:hover{
-  background:linear-gradient(135deg, #6b3410 0%, #8b4513 100%);
+  background:linear-gradient(135deg, #0f2f4f 0%, #1a4d7a 100%);
   transform:translateY(-2px);
-  box-shadow:0 8px 20px rgba(139,69,19,.35);
+  box-shadow:0 8px 20px rgba(26,77,122,.35);
 }
 
 .submit:disabled{
@@ -362,7 +354,7 @@ footer{
   margin:50px 0;
   position:relative;
   height:2px;
-  background:linear-gradient(90deg, transparent, #d4a574, #c67c4e, #d4a574, transparent);
+  background:linear-gradient(90deg, transparent, #1a4d7a, #ffd700, #1a4d7a, transparent);
 }
 
 .tile-divider::before{
@@ -373,7 +365,7 @@ footer{
   transform:translate(-50%, -50%);
   background:white;
   padding:0 15px;
-  color:#d4a574;
+  color:#1a4d7a;
   font-size:16px;
 }
 
@@ -417,7 +409,7 @@ footer{
 
 <div class="section">
 <h3>Bienvenidos</h3>
-<p>Your presence is the greatest gift we could ask for. Join us as we celebrate our love surrounded by family, friends, Spanish sunshine, exquisite food, and moments we will treasure forever. We are so excited to share this special day with the people we love most.</p>
+<p>Your presence is the greatest gift we could ask for. Join us as we celebrate our love surrounded by family, friends, Spanish sunshine, exquisite food, and moments we will treasure forever. We [...]
 </div>
 
 <div class="tile-divider"></div>
@@ -455,7 +447,7 @@ footer{
 
 <div class="section">
 <h3>Accommodation</h3>
-<p>We recommend staying in either Moraira or Teulada, both offering beautiful hotels, apartments, and villas with stunning Mediterranean views. Detailed accommodation recommendations will be shared closer to the wedding date.</p>
+<p>We recommend staying in either Moraira or Teulada, both offering beautiful hotels, apartments, and villas with stunning Mediterranean views. Detailed accommodation recommendations will be shar[...]
 </div>
 
 <div class="tile-divider"></div>
@@ -545,7 +537,7 @@ Made with love for our favourite people ❤️
 
     try{
       // Send to Google Sheets via Apps Script
-      const resp = await fetch('https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/useFunctionName?name=' + encodeURIComponent(data.name) + '&email=' + encodeURIComponent(data.email) + '&attending=' + encodeURIComponent(data.attending) + '&guests=' + encodeURIComponent(data.guests) + '&dietary=' + encodeURIComponent(data.dietary) + '&message=' + encodeURIComponent(data.message), {
+      const resp = await fetch('https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/useFunctionName?name=' + encodeURIComponent(data.name) + '&email=' + encodeURIComponent(data.email) + '&atten[...]
         method: 'GET'
       });
 
